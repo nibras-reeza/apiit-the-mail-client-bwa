@@ -1,0 +1,5 @@
+C:\Users\Nibras\documents\visual studio 2012\Projects\TheMailClient\PresentationLayerTests\bin\Release\ModelTests.dll
+C:\Users\Nibras\documents\visual studio 2012\Projects\TheMailClient\PresentationLayerTests\bin\Release\ModelTests.pdb
+C:\Users\Nibras\documents\visual studio 2012\Projects\TheMailClient\PresentationLayerTests\obj\Release\PresentationLayerTests.csprojResolveAssemblyReference.cache
+C:\Users\Nibras\documents\visual studio 2012\Projects\TheMailClient\PresentationLayerTests\obj\Release\ModelTests.dll
+C:\Users\Nibras\documents\visual studio 2012\Projects\TheMailClient\PresentationLayerTests\obj\Release\ModelTests.pdb

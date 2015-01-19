@@ -1,0 +1,10 @@
+C:\Users\Nibras\documents\visual studio 2012\Projects\TheMailClient\DomainLayerTests\obj\Release\DomainLayerTests.csprojResolveAssemblyReference.cache
+C:\Users\Nibras\documents\visual studio 2012\Projects\TheMailClient\DomainLayerTests\bin\Release\DomainLayerTests.dll
+C:\Users\Nibras\documents\visual studio 2012\Projects\TheMailClient\DomainLayerTests\bin\Release\DomainLayerTests.pdb
+C:\Users\Nibras\documents\visual studio 2012\Projects\TheMailClient\DomainLayerTests\bin\Release\Domain.dll
+C:\Users\Nibras\documents\visual studio 2012\Projects\TheMailClient\DomainLayerTests\bin\Release\Storage.dll
+C:\Users\Nibras\documents\visual studio 2012\Projects\TheMailClient\DomainLayerTests\bin\Release\Newtonsoft.Json.dll
+C:\Users\Nibras\documents\visual studio 2012\Projects\TheMailClient\DomainLayerTests\bin\Release\Domain.pdb
+C:\Users\Nibras\documents\visual studio 2012\Projects\TheMailClient\DomainLayerTests\bin\Release\Storage.pdb
+C:\Users\Nibras\documents\visual studio 2012\Projects\TheMailClient\DomainLayerTests\obj\Release\DomainLayerTests.dll
+C:\Users\Nibras\documents\visual studio 2012\Projects\TheMailClient\DomainLayerTests\obj\Release\DomainLayerTests.pdb

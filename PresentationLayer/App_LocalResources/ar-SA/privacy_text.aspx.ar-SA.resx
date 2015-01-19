@@ -1,0 +1,204 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="LblTitle.Text" xml:space="preserve">
+    <value>سياسة الخصوصية للعميل البريد</value>
+  </data>
+  <data name="PageTitle.Text" xml:space="preserve">
+    <value>سياسة الخصوصية - عميل البريد</value>
+  </data>
+  <data name="Para1.Text" xml:space="preserve">
+    <value>هذه السياسة الخصوصية يكشف ممارسات الخصوصية لعميل البريد.</value>
+  </data>
+  <data name="Para10.Text" xml:space="preserve">
+    <value>بينما نستخدم التشفير لحماية المعلومات الحساسة التي تنتقل عن طريق الانترنت، وأيضا حماية المعلومات الخاصة بك حاليا.</value>
+  </data>
+  <data name="Para11.Text" xml:space="preserve">
+    <value>قد تتغير سياسة الخصوصية من وقت لآخر، وسوف يتم نشر كافة التحديثات على هذه الصفحة.</value>
+  </data>
+  <data name="Para12.Text" xml:space="preserve">
+    <value>إذا كنت تشعر أننا لا يلتزم سياسة الخصوصية هذه، يجب عليك الاتصال بنا مباشرة عن طريق الهاتف على 94-77-9966375 أو عبر البريد الإلكتروني.</value>
+  </data>
+  <data name="Para1Itm1.Text" xml:space="preserve">
+    <value>يتم تجميع ما معلومات شخصية عنك من خلال موقع على شبكة الإنترنت، كيفية استخدامها ومعه قد يتم تقاسمها.</value>
+  </data>
+  <data name="Para1Itm2.Text" xml:space="preserve">
+    <value>ما هي الخيارات المتاحة لك بخصوص استخدام البيانات الخاصة بك.</value>
+  </data>
+  <data name="Para1Itm3.Text" xml:space="preserve">
+    <value>إجراءات أمنية لحماية إساءة استخدام المعلومات الخاصة بك.</value>
+  </data>
+  <data name="Para1Itm4.Text" xml:space="preserve">
+    <value>كيف يمكنك تصحيح أي عدم دقة في المعلومات.</value>
+  </data>
+  <data name="Para2.Text" xml:space="preserve">
+    <value>نحن أصحاب الوحيد للمعلومات التي تم جمعها على هذا الموقع.</value>
+  </data>
+  <data name="Para3.Text" xml:space="preserve">
+    <value>سوف نستخدم المعلومات الخاصة بك للرد عليك، بخصوص السبب الذي اتصلت بنا.</value>
+  </data>
+  <data name="Para4.Text" xml:space="preserve">
+    <value>إلا إذا كنت تطلب منا عدم، ونحن قد اتصل بك عن طريق البريد الإلكتروني في المستقبل ان اقول لكم عن العروض الخاصة، منتجات أو خدمات جديدة، أو تغييرات على سياسة الخصوصية هذه.</value>
+  </data>
+  <data name="Para5.Text" xml:space="preserve">
+    <value>يمكنك الانسحاب في أي اتصالات في المستقبل من بنا في أي وقت.</value>
+  </data>
+  <data name="Para5Itm1.Text" xml:space="preserve">
+    <value>معرفة ما هي البيانات التي لدينا عنك، إن وجدت.</value>
+  </data>
+  <data name="Para5Itm2.Text" xml:space="preserve">
+    <value>تغيير / تصحيح أي البيانات التي لدينا عنك.</value>
+  </data>
+  <data name="Para5Itm3.Text" xml:space="preserve">
+    <value>يكون لنا حذف أي البيانات التي لدينا عنك.</value>
+  </data>
+  <data name="Para5Itm4.Text" xml:space="preserve">
+    <value>التعبير عن أي قلق لديكم حول استخدامنا للبيانات الخاصة بك.</value>
+  </data>
+  <data name="Para6.Text" xml:space="preserve">
+    <value>من أجل استخدام هذا الموقع، يجب أن تكمل مستخدم أولا استمارة التسجيل.</value>
+  </data>
+  <data name="Para7.Text" xml:space="preserve">
+    <value>نحن نستخدم &amp;quot;الكوكيز&amp;quot; على هذا الموقع.</value>
+  </data>
+  <data name="Para8.Text" xml:space="preserve">
+    <value>نحن نأخذ الاحتياطات اللازمة لحماية المعلومات الخاصة بك.</value>
+  </data>
+  <data name="Para9.Text" xml:space="preserve">
+    <value>أينما نقوم بجمع معلومات حساسة (مثل بيانات بطاقة الائتمان)، يتم تشفير هذه المعلومات وإرسالها إلى لنا بطريقة آمنة.</value>
+  </data>
+  <data name="Sub1.Text" xml:space="preserve">
+    <value>جمع المعلومات واستخدامها وتقاسم</value>
+  </data>
+  <data name="Sub2.Text" xml:space="preserve">
+    <value>الوصول لوالسيطرة على المعلومات</value>
+  </data>
+  <data name="Sub3.Text" xml:space="preserve">
+    <value>تسجيل</value>
+  </data>
+  <data name="Sub4.Text" xml:space="preserve">
+    <value>الكوكيز</value>
+  </data>
+  <data name="Sub5.Text" xml:space="preserve">
+    <value>الأمن</value>
+  </data>
+  <data name="Sub6.Text" xml:space="preserve">
+    <value>تحديثات</value>
+  </data>
+</root>

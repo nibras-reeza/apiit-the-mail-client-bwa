@@ -1,0 +1,42 @@
+C:\Users\Nibras\Documents\Visual Studio 2012\Projects\TheMailClient\PresentationLayer\bin\TheMailClient.dll
+C:\Users\Nibras\Documents\Visual Studio 2012\Projects\TheMailClient\PresentationLayer\bin\TheMailClient.pdb
+C:\Users\Nibras\Documents\Visual Studio 2012\Projects\TheMailClient\PresentationLayer\bin\Domain.dll
+C:\Users\Nibras\Documents\Visual Studio 2012\Projects\TheMailClient\PresentationLayer\bin\Newtonsoft.Json.dll
+C:\Users\Nibras\Documents\Visual Studio 2012\Projects\TheMailClient\PresentationLayer\bin\Recaptcha.dll
+C:\Users\Nibras\Documents\Visual Studio 2012\Projects\TheMailClient\PresentationLayer\bin\System.Net.Http.Formatting.dll
+C:\Users\Nibras\Documents\Visual Studio 2012\Projects\TheMailClient\PresentationLayer\bin\System.Web.Http.dll
+C:\Users\Nibras\Documents\Visual Studio 2012\Projects\TheMailClient\PresentationLayer\bin\System.Web.Http.WebHost.dll
+C:\Users\Nibras\Documents\Visual Studio 2012\Projects\TheMailClient\PresentationLayer\bin\Storage.dll
+C:\Users\Nibras\Documents\Visual Studio 2012\Projects\TheMailClient\PresentationLayer\bin\Renci.SshNet.dll
+C:\Users\Nibras\Documents\Visual Studio 2012\Projects\TheMailClient\PresentationLayer\bin\Domain.pdb
+C:\Users\Nibras\Documents\Visual Studio 2012\Projects\TheMailClient\PresentationLayer\bin\Newtonsoft.Json.xml
+C:\Users\Nibras\Documents\Visual Studio 2012\Projects\TheMailClient\PresentationLayer\bin\Recaptcha.pdb
+C:\Users\Nibras\Documents\Visual Studio 2012\Projects\TheMailClient\PresentationLayer\bin\System.Net.Http.Formatting.xml
+C:\Users\Nibras\Documents\Visual Studio 2012\Projects\TheMailClient\PresentationLayer\bin\System.Web.Http.xml
+C:\Users\Nibras\Documents\Visual Studio 2012\Projects\TheMailClient\PresentationLayer\bin\System.Web.Http.WebHost.xml
+C:\Users\Nibras\Documents\Visual Studio 2012\Projects\TheMailClient\PresentationLayer\bin\Storage.pdb
+C:\Users\Nibras\Documents\Visual Studio 2012\Projects\TheMailClient\PresentationLayer\obj\Debug\PresentationLayer.csprojResolveAssemblyReference.cache
+C:\Users\Nibras\Documents\Visual Studio 2012\Projects\TheMailClient\PresentationLayer\obj\Debug\TheMailClient.Presentation.Properties.Resources.resources
+C:\Users\Nibras\Documents\Visual Studio 2012\Projects\TheMailClient\PresentationLayer\obj\Debug\PresentationLayer.csproj.GenerateResource.Cache
+C:\Users\Nibras\Documents\Visual Studio 2012\Projects\TheMailClient\PresentationLayer\obj\Debug\TheMailClient.dll
+C:\Users\Nibras\Documents\Visual Studio 2012\Projects\TheMailClient\PresentationLayer\obj\Debug\TheMailClient.pdb
+C:\Users\Nibras\Dropbox\APIIT\Final Year\BWA\final\final\Project\TheMailClient\PresentationLayer\bin\TheMailClient.dll
+C:\Users\Nibras\Dropbox\APIIT\Final Year\BWA\final\final\Project\TheMailClient\PresentationLayer\bin\TheMailClient.pdb
+C:\Users\Nibras\Dropbox\APIIT\Final Year\BWA\final\final\Project\TheMailClient\PresentationLayer\bin\Domain.dll
+C:\Users\Nibras\Dropbox\APIIT\Final Year\BWA\final\final\Project\TheMailClient\PresentationLayer\bin\Newtonsoft.Json.dll
+C:\Users\Nibras\Dropbox\APIIT\Final Year\BWA\final\final\Project\TheMailClient\PresentationLayer\bin\System.Net.Http.Formatting.dll
+C:\Users\Nibras\Dropbox\APIIT\Final Year\BWA\final\final\Project\TheMailClient\PresentationLayer\bin\System.Web.Http.dll
+C:\Users\Nibras\Dropbox\APIIT\Final Year\BWA\final\final\Project\TheMailClient\PresentationLayer\bin\System.Web.Http.WebHost.dll
+C:\Users\Nibras\Dropbox\APIIT\Final Year\BWA\final\final\Project\TheMailClient\PresentationLayer\bin\Storage.dll
+C:\Users\Nibras\Dropbox\APIIT\Final Year\BWA\final\final\Project\TheMailClient\PresentationLayer\bin\Renci.SshNet.dll
+C:\Users\Nibras\Dropbox\APIIT\Final Year\BWA\final\final\Project\TheMailClient\PresentationLayer\bin\Domain.pdb
+C:\Users\Nibras\Dropbox\APIIT\Final Year\BWA\final\final\Project\TheMailClient\PresentationLayer\bin\Newtonsoft.Json.xml
+C:\Users\Nibras\Dropbox\APIIT\Final Year\BWA\final\final\Project\TheMailClient\PresentationLayer\bin\System.Net.Http.Formatting.xml
+C:\Users\Nibras\Dropbox\APIIT\Final Year\BWA\final\final\Project\TheMailClient\PresentationLayer\bin\System.Web.Http.xml
+C:\Users\Nibras\Dropbox\APIIT\Final Year\BWA\final\final\Project\TheMailClient\PresentationLayer\bin\System.Web.Http.WebHost.xml
+C:\Users\Nibras\Dropbox\APIIT\Final Year\BWA\final\final\Project\TheMailClient\PresentationLayer\bin\Storage.pdb
+C:\Users\Nibras\Dropbox\APIIT\Final Year\BWA\final\final\Project\TheMailClient\PresentationLayer\obj\Debug\PresentationLayer.csprojResolveAssemblyReference.cache
+C:\Users\Nibras\Dropbox\APIIT\Final Year\BWA\final\final\Project\TheMailClient\PresentationLayer\obj\Debug\TheMailClient.Presentation.Properties.Resources.resources
+C:\Users\Nibras\Dropbox\APIIT\Final Year\BWA\final\final\Project\TheMailClient\PresentationLayer\obj\Debug\PresentationLayer.csproj.GenerateResource.Cache
+C:\Users\Nibras\Dropbox\APIIT\Final Year\BWA\final\final\Project\TheMailClient\PresentationLayer\obj\Debug\TheMailClient.dll
+C:\Users\Nibras\Dropbox\APIIT\Final Year\BWA\final\final\Project\TheMailClient\PresentationLayer\obj\Debug\TheMailClient.pdb

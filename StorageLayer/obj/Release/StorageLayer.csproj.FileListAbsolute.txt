@@ -1,0 +1,10 @@
+C:\Users\Nibras\documents\visual studio 2012\Projects\TheMailClient\StorageLayer\bin\Release\Storage.dll
+C:\Users\Nibras\documents\visual studio 2012\Projects\TheMailClient\StorageLayer\bin\Release\Storage.pdb
+C:\Users\Nibras\documents\visual studio 2012\Projects\TheMailClient\StorageLayer\bin\Release\Newtonsoft.Json.dll
+C:\Users\Nibras\documents\visual studio 2012\Projects\TheMailClient\StorageLayer\obj\Release\Storage.dll
+C:\Users\Nibras\documents\visual studio 2012\Projects\TheMailClient\StorageLayer\obj\Release\Storage.pdb
+C:\Users\Nibras\documents\visual studio 2012\Projects\TheMailClient\StorageLayer\obj\Release\StorageLayer.csprojResolveAssemblyReference.cache
+C:\Users\Nibras\documents\visual studio 2012\Projects\TheMailClient\StorageLayer\bin\Release\Storage.dll.config
+C:\Users\Nibras\Documents\Visual Studio 2012\Projects\TheMailClient\StorageLayer\bin\Release\Renci.SshNet.dll
+C:\Users\Nibras\Documents\Visual Studio 2012\Projects\TheMailClient\StorageLayer\bin\Release\App_Data\TMCDB.mdf
+C:\Users\Nibras\Documents\Visual Studio 2012\Projects\TheMailClient\StorageLayer\bin\Release\App_Data\TMCDB_log.ldf

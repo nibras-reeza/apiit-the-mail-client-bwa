@@ -1,0 +1,220 @@
+﻿/*****************************************************************************
+    This file contains CSS stylings to control layout and flow of the pages.
+
+    Author: Nibras Ahamed Reeza (CB004641)
+    E-Mail: nibras.ahamed@gmail.com
+
+    Last Modified: 18/08/2014
+
+******************************************************************************/
+/*http://www.feedthebot.com/pagespeed/optimize-css-delivery.html
+
+    */
+
+/*
+https://stackoverflow.com/questions/7990832/float-css-attribute-causing-parent-div-not-to-inherit-height
+*/
+
+#lang_selector {
+    float: right;
+    margin-top: 25%;
+}
+
+div {
+    margin: auto;
+    /*border: solid 1px black;*/
+}
+
+body {
+    font-size: 14px;
+    margin: 4px !important;
+    max-width: 1920px !important;
+}
+
+#main_wrapper, body, #form1 {
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    border: none !important;
+}
+
+#header {
+    padding: 3px;
+    min-height: 64px;
+    max-height: 134px;
+    height: 100px;
+}
+
+#body {
+    margin-top: 0.5%;
+}
+
+#footer {
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+    height: 38px;
+}
+
+#content {
+    float: left;
+    width: 87%;
+    height: 99%;
+}
+
+#promo {
+    float: right;
+    width: 12%;
+    height: 99%;
+    background-color: gray;
+}
+
+ul.navigation {
+    margin: 0px;
+    text-align: center;
+    margin-bottom:1%;
+}
+/*http://css.maxdesign.com.au/listamatic/horizontal01.htm*/
+ul.horizontal li {
+    display: inline;
+    list-style: none;
+}
+
+.navigation a {
+    margin-right: 3%;
+    margin-left: 3%;
+    text-decoration: none;
+}
+
+#logo, #search, #account {
+    height: 97%;
+}
+
+#logo {
+    float: left;
+    width: 12%;
+    text-align: center;
+}
+
+#account {
+    float: right;
+    width: 18%;
+}
+
+#account_links {
+    text-align: right;
+}
+
+#search {
+    float: left;
+    margin-left: 6%;
+    width: 60%;
+    vertical-align: central;
+    text-align: center;
+}
+
+#search_term {
+    margin: 1%;
+    margin-right: 0px;
+    padding: 1%;
+    width: 70%;
+}
+
+#searchButton {
+    margin: 1%;
+    margin-left: 0px;
+    padding: 1%;
+    width: 2%;
+}
+
+#left_column {
+    z-index: 1;
+    float: left;
+    width: 18%;
+    height: 98%;
+}
+
+#reload {
+    font-size: xx-large;
+    float: right;
+    border: none;
+    background: none;
+}
+
+#right_column {
+    overflow-y: scroll;
+    margin-left: 2%;
+    height: 98%;
+}
+
+#new {
+    padding: 1%;
+    height: 50px;
+    text-align: center;
+    width: 95%;
+}
+
+#tag_section {
+    overflow: scroll;
+    padding: 1%;
+    height: 87%;
+    width: 95%;
+}
+
+#logo_image {
+    height: 98%;
+}
+
+div.tag span.ui-icon {
+    float: right;
+    margin: auto;
+    max-height: 99%;
+}
+
+#new_mail, #contacts {
+    height: 99%;
+}
+    /*https://stackoverflow.com/questions/4049342/how-can-i-zoom-a-div-in-firefox-and-opera*/
+    #contacts .ui-icon {
+        -moz-transform: scale(1.5);
+        -ms-transform: scale(1.5);
+        -o-transform: scale(1.5);
+        -webkit-transform: scale(1.5);
+        transform: scale(1.5);
+        -ms-zoom: 1.5;
+        zoom: 1.5;
+    }
+
+.navigation a:hover {
+    text-decoration: underline;
+}
+
+#footer * {
+}
+
+.tag {
+}
+/*https://stackoverflow.com/questions/732139/vertical-align-middle-does-not-align-to-the-middle-in-firefox*/
+
+#TagEdit {
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1%;
+    text-align: center;
+}
+
+    #TagEdit * {
+        margin: 1%;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 1%;
+    }
+
+.accordion button {
+    right: 1%;
+    clear: left;
+}
+
+.meessage_body header {
+    font-weight: bold;
+}

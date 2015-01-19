@@ -1,0 +1,1003 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{77CE0149-A109-43BC-8DC4-B44FAC27088C}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>TheMailClient.Presentation</RootNamespace>
+    <AssemblyName>TheMailClient</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Newtonsoft.Json, Version=6.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Newtonsoft.Json.6.0.5\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="Recaptcha">
+      <HintPath>..\..\..\..\..\Dropbox\APIIT\Final Year\BWA\Recaptcha.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Net.Http.Formatting, Version=5.2.2.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Client.5.2.2\lib\net45\System.Net.Http.Formatting.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http.WebRequest" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Http, Version=5.2.2.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Core.5.2.2\lib\net45\System.Web.Http.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Http.WebHost, Version=5.2.2.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.WebHost.5.2.2\lib\net45\System.Web.Http.WebHost.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_Data\UIDB.mdf" />
+    <Content Include="App_Data\UIDB_log.ldf">
+      <DependentUpon>UIDB.mdf</DependentUpon>
+    </Content>
+    <Content Include="App_Themes\black-tie\Styles\images\ui-bg_diagonals-thick_8_333333_40x40.png" />
+    <Content Include="App_Themes\black-tie\Styles\images\ui-bg_flat_65_ffffff_40x100.png" />
+    <Content Include="App_Themes\black-tie\Styles\images\ui-bg_glass_40_111111_1x400.png" />
+    <Content Include="App_Themes\black-tie\Styles\images\ui-bg_glass_55_1c1c1c_1x400.png" />
+    <Content Include="App_Themes\black-tie\Styles\images\ui-bg_highlight-hard_100_f9f9f9_1x100.png" />
+    <Content Include="App_Themes\black-tie\Styles\images\ui-bg_highlight-hard_40_aaaaaa_1x100.png" />
+    <Content Include="App_Themes\black-tie\Styles\images\ui-bg_highlight-soft_50_aaaaaa_1x100.png" />
+    <Content Include="App_Themes\black-tie\Styles\images\ui-bg_inset-hard_45_cd0a0a_1x100.png" />
+    <Content Include="App_Themes\black-tie\Styles\images\ui-bg_inset-hard_55_ffeb80_1x100.png" />
+    <Content Include="App_Themes\black-tie\Styles\images\ui-icons_222222_256x240.png" />
+    <Content Include="App_Themes\black-tie\Styles\images\ui-icons_4ca300_256x240.png" />
+    <Content Include="App_Themes\black-tie\Styles\images\ui-icons_bbbbbb_256x240.png" />
+    <Content Include="App_Themes\black-tie\Styles\images\ui-icons_ededed_256x240.png" />
+    <Content Include="App_Themes\black-tie\Styles\images\ui-icons_ffcf29_256x240.png" />
+    <Content Include="App_Themes\black-tie\Styles\images\ui-icons_ffffff_256x240.png" />
+    <Content Include="App_Themes\black-tie\Styles\jquery-ui.theme.min.css" />
+    <Content Include="App_Themes\blitzer\Styles\images\ui-bg_diagonals-thick_75_f3d8d8_40x40.png" />
+    <Content Include="App_Themes\blitzer\Styles\images\ui-bg_dots-small_65_a6a6a6_2x2.png" />
+    <Content Include="App_Themes\blitzer\Styles\images\ui-bg_flat_0_333333_40x100.png" />
+    <Content Include="App_Themes\blitzer\Styles\images\ui-bg_flat_65_ffffff_40x100.png" />
+    <Content Include="App_Themes\blitzer\Styles\images\ui-bg_flat_75_ffffff_40x100.png" />
+    <Content Include="App_Themes\blitzer\Styles\images\ui-bg_glass_55_fbf8ee_1x400.png" />
+    <Content Include="App_Themes\blitzer\Styles\images\ui-bg_highlight-hard_100_eeeeee_1x100.png" />
+    <Content Include="App_Themes\blitzer\Styles\images\ui-bg_highlight-hard_100_f6f6f6_1x100.png" />
+    <Content Include="App_Themes\blitzer\Styles\images\ui-bg_highlight-soft_15_cc0000_1x100.png" />
+    <Content Include="App_Themes\blitzer\Styles\images\ui-icons_004276_256x240.png" />
+    <Content Include="App_Themes\blitzer\Styles\images\ui-icons_cc0000_256x240.png" />
+    <Content Include="App_Themes\blitzer\Styles\images\ui-icons_ffffff_256x240.png" />
+    <Content Include="App_Themes\blitzer\Styles\jquery-ui.theme.min.css" />
+    <Content Include="App_Themes\cupertino\Styles\images\ui-bg_diagonals-thick_90_eeeeee_40x40.png" />
+    <Content Include="App_Themes\cupertino\Styles\images\ui-bg_flat_15_cd0a0a_40x100.png" />
+    <Content Include="App_Themes\cupertino\Styles\images\ui-bg_glass_100_e4f1fb_1x400.png" />
+    <Content Include="App_Themes\cupertino\Styles\images\ui-bg_glass_50_3baae3_1x400.png" />
+    <Content Include="App_Themes\cupertino\Styles\images\ui-bg_glass_80_d7ebf9_1x400.png" />
+    <Content Include="App_Themes\cupertino\Styles\images\ui-bg_highlight-hard_100_f2f5f7_1x100.png" />
+    <Content Include="App_Themes\cupertino\Styles\images\ui-bg_highlight-hard_70_000000_1x100.png" />
+    <Content Include="App_Themes\cupertino\Styles\images\ui-bg_highlight-soft_100_deedf7_1x100.png" />
+    <Content Include="App_Themes\cupertino\Styles\images\ui-bg_highlight-soft_25_ffef8f_1x100.png" />
+    <Content Include="App_Themes\cupertino\Styles\images\ui-icons_2694e8_256x240.png" />
+    <Content Include="App_Themes\cupertino\Styles\images\ui-icons_2e83ff_256x240.png" />
+    <Content Include="App_Themes\cupertino\Styles\images\ui-icons_3d80b3_256x240.png" />
+    <Content Include="App_Themes\cupertino\Styles\images\ui-icons_72a7cf_256x240.png" />
+    <Content Include="App_Themes\cupertino\Styles\images\ui-icons_ffffff_256x240.png" />
+    <Content Include="App_Themes\cupertino\Styles\jquery-ui.theme.min.css" />
+    <Content Include="App_Themes\dark-hive\Styles\images\ui-bg_flat_30_cccccc_40x100.png" />
+    <Content Include="App_Themes\dark-hive\Styles\images\ui-bg_flat_50_5c5c5c_40x100.png" />
+    <Content Include="App_Themes\dark-hive\Styles\images\ui-bg_glass_40_ffc73d_1x400.png" />
+    <Content Include="App_Themes\dark-hive\Styles\images\ui-bg_highlight-hard_20_0972a5_1x100.png" />
+    <Content Include="App_Themes\dark-hive\Styles\images\ui-bg_highlight-soft_33_003147_1x100.png" />
+    <Content Include="App_Themes\dark-hive\Styles\images\ui-bg_highlight-soft_35_222222_1x100.png" />
+    <Content Include="App_Themes\dark-hive\Styles\images\ui-bg_highlight-soft_44_444444_1x100.png" />
+    <Content Include="App_Themes\dark-hive\Styles\images\ui-bg_highlight-soft_80_eeeeee_1x100.png" />
+    <Content Include="App_Themes\dark-hive\Styles\images\ui-bg_loop_25_000000_21x21.png" />
+    <Content Include="App_Themes\dark-hive\Styles\images\ui-icons_222222_256x240.png" />
+    <Content Include="App_Themes\dark-hive\Styles\images\ui-icons_4b8e0b_256x240.png" />
+    <Content Include="App_Themes\dark-hive\Styles\images\ui-icons_a83300_256x240.png" />
+    <Content Include="App_Themes\dark-hive\Styles\images\ui-icons_cccccc_256x240.png" />
+    <Content Include="App_Themes\dark-hive\Styles\images\ui-icons_ffffff_256x240.png" />
+    <Content Include="App_Themes\dark-hive\Styles\jquery-ui.theme.min.css" />
+    <Content Include="App_Themes\dot-luv\Styles\images\ui-bg_diagonals-thick_15_0b3e6f_40x40.png" />
+    <Content Include="App_Themes\dot-luv\Styles\images\ui-bg_dots-medium_30_0b58a2_4x4.png" />
+    <Content Include="App_Themes\dot-luv\Styles\images\ui-bg_dots-small_20_333333_2x2.png" />
+    <Content Include="App_Themes\dot-luv\Styles\images\ui-bg_dots-small_30_a32d00_2x2.png" />
+    <Content Include="App_Themes\dot-luv\Styles\images\ui-bg_dots-small_40_00498f_2x2.png" />
+    <Content Include="App_Themes\dot-luv\Styles\images\ui-bg_flat_0_aaaaaa_40x100.png" />
+    <Content Include="App_Themes\dot-luv\Styles\images\ui-bg_flat_40_292929_40x100.png" />
+    <Content Include="App_Themes\dot-luv\Styles\images\ui-bg_gloss-wave_20_111111_500x100.png" />
+    <Content Include="App_Themes\dot-luv\Styles\images\ui-icons_00498f_256x240.png" />
+    <Content Include="App_Themes\dot-luv\Styles\images\ui-icons_98d2fb_256x240.png" />
+    <Content Include="App_Themes\dot-luv\Styles\images\ui-icons_9ccdfc_256x240.png" />
+    <Content Include="App_Themes\dot-luv\Styles\images\ui-icons_ffffff_256x240.png" />
+    <Content Include="App_Themes\dot-luv\Styles\jquery-ui.theme.min.css" />
+    <Content Include="App_Themes\eggplant\Styles\images\ui-bg_flat_0_aaaaaa_40x100.png" />
+    <Content Include="App_Themes\eggplant\Styles\images\ui-bg_flat_0_eeeeee_40x100.png" />
+    <Content Include="App_Themes\eggplant\Styles\images\ui-bg_flat_55_994d53_40x100.png" />
+    <Content Include="App_Themes\eggplant\Styles\images\ui-bg_flat_55_fafafa_40x100.png" />
+    <Content Include="App_Themes\eggplant\Styles\images\ui-bg_gloss-wave_30_3d3644_500x100.png" />
+    <Content Include="App_Themes\eggplant\Styles\images\ui-bg_highlight-soft_100_dcd9de_1x100.png" />
+    <Content Include="App_Themes\eggplant\Styles\images\ui-bg_highlight-soft_100_eae6ea_1x100.png" />
+    <Content Include="App_Themes\eggplant\Styles\images\ui-bg_highlight-soft_25_30273a_1x100.png" />
+    <Content Include="App_Themes\eggplant\Styles\images\ui-bg_highlight-soft_45_5f5964_1x100.png" />
+    <Content Include="App_Themes\eggplant\Styles\images\ui-icons_454545_256x240.png" />
+    <Content Include="App_Themes\eggplant\Styles\images\ui-icons_734d99_256x240.png" />
+    <Content Include="App_Themes\eggplant\Styles\images\ui-icons_8d78a5_256x240.png" />
+    <Content Include="App_Themes\eggplant\Styles\images\ui-icons_a8a3ae_256x240.png" />
+    <Content Include="App_Themes\eggplant\Styles\images\ui-icons_ebccce_256x240.png" />
+    <Content Include="App_Themes\eggplant\Styles\images\ui-icons_ffffff_256x240.png" />
+    <Content Include="App_Themes\eggplant\Styles\jquery-ui.theme.min.css" />
+    <Content Include="App_Themes\excite-bike\Styles\images\ui-bg_diagonals-small_25_c5ddfc_40x40.png" />
+    <Content Include="App_Themes\excite-bike\Styles\images\ui-bg_diagonals-thick_20_e69700_40x40.png" />
+    <Content Include="App_Themes\excite-bike\Styles\images\ui-bg_diagonals-thick_22_1484e6_40x40.png" />
+    <Content Include="App_Themes\excite-bike\Styles\images\ui-bg_diagonals-thick_26_2293f7_40x40.png" />
+    <Content Include="App_Themes\excite-bike\Styles\images\ui-bg_flat_0_e69700_40x100.png" />
+    <Content Include="App_Themes\excite-bike\Styles\images\ui-bg_flat_0_e6b900_40x100.png" />
+    <Content Include="App_Themes\excite-bike\Styles\images\ui-bg_highlight-soft_100_f9f9f9_1x100.png" />
+    <Content Include="App_Themes\excite-bike\Styles\images\ui-bg_inset-hard_100_eeeeee_1x100.png" />
+    <Content Include="App_Themes\excite-bike\Styles\images\ui-icons_0a82eb_256x240.png" />
+    <Content Include="App_Themes\excite-bike\Styles\images\ui-icons_0b54d5_256x240.png" />
+    <Content Include="App_Themes\excite-bike\Styles\images\ui-icons_5fa5e3_256x240.png" />
+    <Content Include="App_Themes\excite-bike\Styles\images\ui-icons_fcdd4a_256x240.png" />
+    <Content Include="App_Themes\excite-bike\Styles\images\ui-icons_ffffff_256x240.png" />
+    <Content Include="App_Themes\excite-bike\Styles\jquery-ui.theme.min.css" />
+    <Content Include="App_Themes\flick\Styles\images\ui-bg_flat_0_aaaaaa_40x100.png" />
+    <Content Include="App_Themes\flick\Styles\images\ui-bg_flat_0_eeeeee_40x100.png" />
+    <Content Include="App_Themes\flick\Styles\images\ui-bg_flat_55_ffffff_40x100.png" />
+    <Content Include="App_Themes\flick\Styles\images\ui-bg_flat_75_ffffff_40x100.png" />
+    <Content Include="App_Themes\flick\Styles\images\ui-bg_glass_65_ffffff_1x400.png" />
+    <Content Include="App_Themes\flick\Styles\images\ui-bg_highlight-soft_100_f6f6f6_1x100.png" />
+    <Content Include="App_Themes\flick\Styles\images\ui-bg_highlight-soft_25_0073ea_1x100.png" />
+    <Content Include="App_Themes\flick\Styles\images\ui-bg_highlight-soft_50_dddddd_1x100.png" />
+    <Content Include="App_Themes\flick\Styles\images\ui-icons_0073ea_256x240.png" />
+    <Content Include="App_Themes\flick\Styles\images\ui-icons_454545_256x240.png" />
+    <Content Include="App_Themes\flick\Styles\images\ui-icons_666666_256x240.png" />
+    <Content Include="App_Themes\flick\Styles\images\ui-icons_ff0084_256x240.png" />
+    <Content Include="App_Themes\flick\Styles\images\ui-icons_ffffff_256x240.png" />
+    <Content Include="App_Themes\flick\Styles\jquery-ui.theme.min.css" />
+    <Content Include="App_Themes\hot-sneaks\Styles\images\ui-bg_diagonals-small_40_db4865_40x40.png" />
+    <Content Include="App_Themes\hot-sneaks\Styles\images\ui-bg_diagonals-small_50_93c3cd_40x40.png" />
+    <Content Include="App_Themes\hot-sneaks\Styles\images\ui-bg_diagonals-small_50_ff3853_40x40.png" />
+    <Content Include="App_Themes\hot-sneaks\Styles\images\ui-bg_diagonals-small_75_ccd232_40x40.png" />
+    <Content Include="App_Themes\hot-sneaks\Styles\images\ui-bg_dots-medium_80_ffff38_4x4.png" />
+    <Content Include="App_Themes\hot-sneaks\Styles\images\ui-bg_dots-small_35_35414f_2x2.png" />
+    <Content Include="App_Themes\hot-sneaks\Styles\images\ui-bg_flat_75_ba9217_40x100.png" />
+    <Content Include="App_Themes\hot-sneaks\Styles\images\ui-bg_flat_75_ffffff_40x100.png" />
+    <Content Include="App_Themes\hot-sneaks\Styles\images\ui-bg_white-lines_85_f7f7ba_40x100.png" />
+    <Content Include="App_Themes\hot-sneaks\Styles\images\ui-icons_454545_256x240.png" />
+    <Content Include="App_Themes\hot-sneaks\Styles\images\ui-icons_88a206_256x240.png" />
+    <Content Include="App_Themes\hot-sneaks\Styles\images\ui-icons_c02669_256x240.png" />
+    <Content Include="App_Themes\hot-sneaks\Styles\images\ui-icons_e1e463_256x240.png" />
+    <Content Include="App_Themes\hot-sneaks\Styles\images\ui-icons_ffeb33_256x240.png" />
+    <Content Include="App_Themes\hot-sneaks\Styles\images\ui-icons_ffffff_256x240.png" />
+    <Content Include="App_Themes\hot-sneaks\Styles\jquery-ui.theme.min.css" />
+    <Content Include="App_Themes\humanity\Styles\images\ui-bg_flat_75_aaaaaa_40x100.png" />
+    <Content Include="App_Themes\humanity\Styles\images\ui-bg_glass_100_f5f0e5_1x400.png" />
+    <Content Include="App_Themes\humanity\Styles\images\ui-bg_glass_25_cb842e_1x400.png" />
+    <Content Include="App_Themes\humanity\Styles\images\ui-bg_glass_70_ede4d4_1x400.png" />
+    <Content Include="App_Themes\humanity\Styles\images\ui-bg_highlight-hard_100_f4f0ec_1x100.png" />
+    <Content Include="App_Themes\humanity\Styles\images\ui-bg_highlight-hard_65_fee4bd_1x100.png" />
+    <Content Include="App_Themes\humanity\Styles\images\ui-bg_highlight-hard_75_f5f5b5_1x100.png" />
+    <Content Include="App_Themes\humanity\Styles\images\ui-bg_inset-soft_100_f4f0ec_1x100.png" />
+    <Content Include="App_Themes\humanity\Styles\images\ui-icons_c47a23_256x240.png" />
+    <Content Include="App_Themes\humanity\Styles\images\ui-icons_cb672b_256x240.png" />
+    <Content Include="App_Themes\humanity\Styles\images\ui-icons_f08000_256x240.png" />
+    <Content Include="App_Themes\humanity\Styles\images\ui-icons_f35f07_256x240.png" />
+    <Content Include="App_Themes\humanity\Styles\images\ui-icons_ff7519_256x240.png" />
+    <Content Include="App_Themes\humanity\Styles\images\ui-icons_ffffff_256x240.png" />
+    <Content Include="App_Themes\humanity\Styles\jquery-ui.theme.min.css" />
+    <Content Include="App_Themes\le-frog\Styles\images\ui-bg_diagonals-small_0_aaaaaa_40x40.png" />
+    <Content Include="App_Themes\le-frog\Styles\images\ui-bg_diagonals-thick_15_444444_40x40.png" />
+    <Content Include="App_Themes\le-frog\Styles\images\ui-bg_diagonals-thick_95_ffdc2e_40x40.png" />
+    <Content Include="App_Themes\le-frog\Styles\images\ui-bg_glass_55_fbf5d0_1x400.png" />
+    <Content Include="App_Themes\le-frog\Styles\images\ui-bg_highlight-hard_30_285c00_1x100.png" />
+    <Content Include="App_Themes\le-frog\Styles\images\ui-bg_highlight-soft_33_3a8104_1x100.png" />
+    <Content Include="App_Themes\le-frog\Styles\images\ui-bg_highlight-soft_50_4eb305_1x100.png" />
+    <Content Include="App_Themes\le-frog\Styles\images\ui-bg_highlight-soft_60_4ca20b_1x100.png" />
+    <Content Include="App_Themes\le-frog\Styles\images\ui-bg_inset-soft_10_285c00_1x100.png" />
+    <Content Include="App_Themes\le-frog\Styles\images\ui-icons_4eb305_256x240.png" />
+    <Content Include="App_Themes\le-frog\Styles\images\ui-icons_72b42d_256x240.png" />
+    <Content Include="App_Themes\le-frog\Styles\images\ui-icons_cd0a0a_256x240.png" />
+    <Content Include="App_Themes\le-frog\Styles\images\ui-icons_ffffff_256x240.png" />
+    <Content Include="App_Themes\le-frog\Styles\jquery-ui.theme.min.css" />
+    <Content Include="App_Themes\mint-choc\Styles\images\ui-bg_flat_0_aaaaaa_40x100.png" />
+    <Content Include="App_Themes\mint-choc\Styles\images\ui-bg_glass_15_5f391b_1x400.png" />
+    <Content Include="App_Themes\mint-choc\Styles\images\ui-bg_gloss-wave_20_1c160d_500x100.png" />
+    <Content Include="App_Themes\mint-choc\Styles\images\ui-bg_gloss-wave_25_453326_500x100.png" />
+    <Content Include="App_Themes\mint-choc\Styles\images\ui-bg_gloss-wave_30_44372c_500x100.png" />
+    <Content Include="App_Themes\mint-choc\Styles\images\ui-bg_highlight-soft_20_201913_1x100.png" />
+    <Content Include="App_Themes\mint-choc\Styles\images\ui-bg_highlight-soft_20_619226_1x100.png" />
+    <Content Include="App_Themes\mint-choc\Styles\images\ui-bg_inset-soft_10_201913_1x100.png" />
+    <Content Include="App_Themes\mint-choc\Styles\images\ui-icons_222222_256x240.png" />
+    <Content Include="App_Themes\mint-choc\Styles\images\ui-icons_9bcc60_256x240.png" />
+    <Content Include="App_Themes\mint-choc\Styles\images\ui-icons_add978_256x240.png" />
+    <Content Include="App_Themes\mint-choc\Styles\images\ui-icons_e3ddc9_256x240.png" />
+    <Content Include="App_Themes\mint-choc\Styles\images\ui-icons_f1fd86_256x240.png" />
+    <Content Include="App_Themes\mint-choc\Styles\images\ui-icons_ffffff_256x240.png" />
+    <Content Include="App_Themes\mint-choc\Styles\jquery-ui.theme.min.css" />
+    <Content Include="App_Themes\overcast\Styles\images\ui-bg_flat_0_aaaaaa_40x100.png" />
+    <Content Include="App_Themes\overcast\Styles\images\ui-bg_flat_0_eeeeee_40x100.png" />
+    <Content Include="App_Themes\overcast\Styles\images\ui-bg_flat_55_c0402a_40x100.png" />
+    <Content Include="App_Themes\overcast\Styles\images\ui-bg_flat_55_eeeeee_40x100.png" />
+    <Content Include="App_Themes\overcast\Styles\images\ui-bg_glass_100_f8f8f8_1x400.png" />
+    <Content Include="App_Themes\overcast\Styles\images\ui-bg_glass_35_dddddd_1x400.png" />
+    <Content Include="App_Themes\overcast\Styles\images\ui-bg_glass_60_eeeeee_1x400.png" />
+    <Content Include="App_Themes\overcast\Styles\images\ui-bg_inset-hard_75_999999_1x100.png" />
+    <Content Include="App_Themes\overcast\Styles\images\ui-bg_inset-soft_50_c9c9c9_1x100.png" />
+    <Content Include="App_Themes\overcast\Styles\images\ui-icons_3383bb_256x240.png" />
+    <Content Include="App_Themes\overcast\Styles\images\ui-icons_454545_256x240.png" />
+    <Content Include="App_Themes\overcast\Styles\images\ui-icons_70b2e1_256x240.png" />
+    <Content Include="App_Themes\overcast\Styles\images\ui-icons_999999_256x240.png" />
+    <Content Include="App_Themes\overcast\Styles\images\ui-icons_fbc856_256x240.png" />
+    <Content Include="App_Themes\overcast\Styles\jquery-ui.theme.min.css" />
+    <Content Include="App_Themes\pepper-grinder\Styles\images\ui-bg_diagonal-maze_20_6e4f1c_10x10.png" />
+    <Content Include="App_Themes\pepper-grinder\Styles\images\ui-bg_diagonal-maze_40_000000_10x10.png" />
+    <Content Include="App_Themes\pepper-grinder\Styles\images\ui-bg_fine-grain_10_eceadf_60x60.png" />
+    <Content Include="App_Themes\pepper-grinder\Styles\images\ui-bg_fine-grain_10_f8f7f6_60x60.png" />
+    <Content Include="App_Themes\pepper-grinder\Styles\images\ui-bg_fine-grain_15_eceadf_60x60.png" />
+    <Content Include="App_Themes\pepper-grinder\Styles\images\ui-bg_fine-grain_15_f7f3de_60x60.png" />
+    <Content Include="App_Themes\pepper-grinder\Styles\images\ui-bg_fine-grain_15_ffffff_60x60.png" />
+    <Content Include="App_Themes\pepper-grinder\Styles\images\ui-bg_fine-grain_65_654b24_60x60.png" />
+    <Content Include="App_Themes\pepper-grinder\Styles\images\ui-bg_fine-grain_68_b83400_60x60.png" />
+    <Content Include="App_Themes\pepper-grinder\Styles\images\ui-icons_222222_256x240.png" />
+    <Content Include="App_Themes\pepper-grinder\Styles\images\ui-icons_3572ac_256x240.png" />
+    <Content Include="App_Themes\pepper-grinder\Styles\images\ui-icons_8c291d_256x240.png" />
+    <Content Include="App_Themes\pepper-grinder\Styles\images\ui-icons_b83400_256x240.png" />
+    <Content Include="App_Themes\pepper-grinder\Styles\images\ui-icons_fbdb93_256x240.png" />
+    <Content Include="App_Themes\pepper-grinder\Styles\images\ui-icons_ffffff_256x240.png" />
+    <Content Include="App_Themes\pepper-grinder\Styles\jquery-ui.theme.min.css" />
+    <Content Include="App_Themes\redmond\Styles\images\ui-bg_flat_0_aaaaaa_40x100.png" />
+    <Content Include="App_Themes\redmond\Styles\images\ui-bg_flat_55_fbec88_40x100.png" />
+    <Content Include="App_Themes\redmond\Styles\images\ui-bg_glass_75_d0e5f5_1x400.png" />
+    <Content Include="App_Themes\redmond\Styles\images\ui-bg_glass_85_dfeffc_1x400.png" />
+    <Content Include="App_Themes\redmond\Styles\images\ui-bg_glass_95_fef1ec_1x400.png" />
+    <Content Include="App_Themes\redmond\Styles\images\ui-bg_gloss-wave_55_5c9ccc_500x100.png" />
+    <Content Include="App_Themes\redmond\Styles\images\ui-bg_inset-hard_100_f5f8f9_1x100.png" />
+    <Content Include="App_Themes\redmond\Styles\images\ui-bg_inset-hard_100_fcfdfd_1x100.png" />
+    <Content Include="App_Themes\redmond\Styles\images\ui-icons_217bc0_256x240.png" />
+    <Content Include="App_Themes\redmond\Styles\images\ui-icons_2e83ff_256x240.png" />
+    <Content Include="App_Themes\redmond\Styles\images\ui-icons_469bdd_256x240.png" />
+    <Content Include="App_Themes\redmond\Styles\images\ui-icons_6da8d5_256x240.png" />
+    <Content Include="App_Themes\redmond\Styles\images\ui-icons_cd0a0a_256x240.png" />
+    <Content Include="App_Themes\redmond\Styles\images\ui-icons_d8e7f3_256x240.png" />
+    <Content Include="App_Themes\redmond\Styles\images\ui-icons_f9bd01_256x240.png" />
+    <Content Include="App_Themes\redmond\Styles\jquery-ui.theme.min.css" />
+    <Content Include="App_Themes\smoothness\Styles\images\ui-bg_flat_0_aaaaaa_40x100.png" />
+    <Content Include="App_Themes\smoothness\Styles\images\ui-bg_flat_75_ffffff_40x100.png" />
+    <Content Include="App_Themes\smoothness\Styles\images\ui-bg_glass_55_fbf9ee_1x400.png" />
+    <Content Include="App_Themes\smoothness\Styles\images\ui-bg_glass_65_ffffff_1x400.png" />
+    <Content Include="App_Themes\smoothness\Styles\images\ui-bg_glass_75_dadada_1x400.png" />
+    <Content Include="App_Themes\smoothness\Styles\images\ui-bg_glass_75_e6e6e6_1x400.png" />
+    <Content Include="App_Themes\smoothness\Styles\images\ui-bg_glass_95_fef1ec_1x400.png" />
+    <Content Include="App_Themes\smoothness\Styles\images\ui-bg_highlight-soft_75_cccccc_1x100.png" />
+    <Content Include="App_Themes\smoothness\Styles\images\ui-icons_222222_256x240.png" />
+    <Content Include="App_Themes\smoothness\Styles\images\ui-icons_2e83ff_256x240.png" />
+    <Content Include="App_Themes\smoothness\Styles\images\ui-icons_454545_256x240.png" />
+    <Content Include="App_Themes\smoothness\Styles\images\ui-icons_888888_256x240.png" />
+    <Content Include="App_Themes\smoothness\Styles\images\ui-icons_cd0a0a_256x240.png" />
+    <Content Include="App_Themes\smoothness\Styles\jquery-ui.theme.min.css" />
+    <Content Include="App_Themes\south-street\Styles\images\ui-bg_glass_55_fcf0ba_1x400.png" />
+    <Content Include="App_Themes\south-street\Styles\images\ui-bg_gloss-wave_100_ece8da_500x100.png" />
+    <Content Include="App_Themes\south-street\Styles\images\ui-bg_highlight-hard_100_f5f3e5_1x100.png" />
+    <Content Include="App_Themes\south-street\Styles\images\ui-bg_highlight-hard_100_fafaf4_1x100.png" />
+    <Content Include="App_Themes\south-street\Styles\images\ui-bg_highlight-hard_15_459e00_1x100.png" />
+    <Content Include="App_Themes\south-street\Styles\images\ui-bg_highlight-hard_95_cccccc_1x100.png" />
+    <Content Include="App_Themes\south-street\Styles\images\ui-bg_highlight-soft_25_67b021_1x100.png" />
+    <Content Include="App_Themes\south-street\Styles\images\ui-bg_highlight-soft_95_ffedad_1x100.png" />
+    <Content Include="App_Themes\south-street\Styles\images\ui-bg_inset-soft_15_2b2922_1x100.png" />
+    <Content Include="App_Themes\south-street\Styles\images\ui-icons_808080_256x240.png" />
+    <Content Include="App_Themes\south-street\Styles\images\ui-icons_847e71_256x240.png" />
+    <Content Include="App_Themes\south-street\Styles\images\ui-icons_8DC262_256x240.png" />
+    <Content Include="App_Themes\south-street\Styles\images\ui-icons_cd0a0a_256x240.png" />
+    <Content Include="App_Themes\south-street\Styles\images\ui-icons_eeeeee_256x240.png" />
+    <Content Include="App_Themes\south-street\Styles\images\ui-icons_ffffff_256x240.png" />
+    <Content Include="App_Themes\south-street\Styles\jquery-ui.theme.min.css" />
+    <Content Include="App_Themes\start\Styles\images\ui-bg_flat_55_999999_40x100.png" />
+    <Content Include="App_Themes\start\Styles\images\ui-bg_flat_75_aaaaaa_40x100.png" />
+    <Content Include="App_Themes\start\Styles\images\ui-bg_glass_45_0078ae_1x400.png" />
+    <Content Include="App_Themes\start\Styles\images\ui-bg_glass_55_f8da4e_1x400.png" />
+    <Content Include="App_Themes\start\Styles\images\ui-bg_glass_75_79c9ec_1x400.png" />
+    <Content Include="App_Themes\start\Styles\images\ui-bg_gloss-wave_45_e14f1c_500x100.png" />
+    <Content Include="App_Themes\start\Styles\images\ui-bg_gloss-wave_50_6eac2c_500x100.png" />
+    <Content Include="App_Themes\start\Styles\images\ui-bg_gloss-wave_75_2191c0_500x100.png" />
+    <Content Include="App_Themes\start\Styles\images\ui-bg_inset-hard_100_fcfdfd_1x100.png" />
+    <Content Include="App_Themes\start\Styles\images\ui-icons_0078ae_256x240.png" />
+    <Content Include="App_Themes\start\Styles\images\ui-icons_056b93_256x240.png" />
+    <Content Include="App_Themes\start\Styles\images\ui-icons_d8e7f3_256x240.png" />
+    <Content Include="App_Themes\start\Styles\images\ui-icons_e0fdff_256x240.png" />
+    <Content Include="App_Themes\start\Styles\images\ui-icons_f5e175_256x240.png" />
+    <Content Include="App_Themes\start\Styles\images\ui-icons_f7a50d_256x240.png" />
+    <Content Include="App_Themes\start\Styles\images\ui-icons_fcd113_256x240.png" />
+    <Content Include="App_Themes\start\Styles\jquery-ui.theme.min.css" />
+    <Content Include="App_Themes\sunny\Styles\images\ui-bg_diagonals-medium_20_d34d17_40x40.png" />
+    <Content Include="App_Themes\sunny\Styles\images\ui-bg_flat_30_cccccc_40x100.png" />
+    <Content Include="App_Themes\sunny\Styles\images\ui-bg_flat_50_5c5c5c_40x100.png" />
+    <Content Include="App_Themes\sunny\Styles\images\ui-bg_gloss-wave_45_817865_500x100.png" />
+    <Content Include="App_Themes\sunny\Styles\images\ui-bg_gloss-wave_60_fece2f_500x100.png" />
+    <Content Include="App_Themes\sunny\Styles\images\ui-bg_gloss-wave_70_ffdd57_500x100.png" />
+    <Content Include="App_Themes\sunny\Styles\images\ui-bg_gloss-wave_90_fff9e5_500x100.png" />
+    <Content Include="App_Themes\sunny\Styles\images\ui-bg_highlight-soft_100_feeebd_1x100.png" />
+    <Content Include="App_Themes\sunny\Styles\images\ui-bg_inset-soft_30_ffffff_1x100.png" />
+    <Content Include="App_Themes\sunny\Styles\images\ui-icons_3d3d3d_256x240.png" />
+    <Content Include="App_Themes\sunny\Styles\images\ui-icons_bd7b00_256x240.png" />
+    <Content Include="App_Themes\sunny\Styles\images\ui-icons_d19405_256x240.png" />
+    <Content Include="App_Themes\sunny\Styles\images\ui-icons_eb990f_256x240.png" />
+    <Content Include="App_Themes\sunny\Styles\images\ui-icons_ed9f26_256x240.png" />
+    <Content Include="App_Themes\sunny\Styles\images\ui-icons_fadc7a_256x240.png" />
+    <Content Include="App_Themes\sunny\Styles\images\ui-icons_ffe180_256x240.png" />
+    <Content Include="App_Themes\sunny\Styles\jquery-ui.theme.min.css" />
+    <Content Include="App_Themes\swanky-purse\Styles\images\ui-bg_diamond_10_4f4221_10x8.png" />
+    <Content Include="App_Themes\swanky-purse\Styles\images\ui-bg_diamond_20_372806_10x8.png" />
+    <Content Include="App_Themes\swanky-purse\Styles\images\ui-bg_diamond_25_675423_10x8.png" />
+    <Content Include="App_Themes\swanky-purse\Styles\images\ui-bg_diamond_25_d5ac5d_10x8.png" />
+    <Content Include="App_Themes\swanky-purse\Styles\images\ui-bg_diamond_8_261803_10x8.png" />
+    <Content Include="App_Themes\swanky-purse\Styles\images\ui-bg_diamond_8_443113_10x8.png" />
+    <Content Include="App_Themes\swanky-purse\Styles\images\ui-bg_flat_75_ddd4b0_40x100.png" />
+    <Content Include="App_Themes\swanky-purse\Styles\images\ui-bg_highlight-hard_65_fee4bd_1x100.png" />
+    <Content Include="App_Themes\swanky-purse\Styles\images\ui-icons_070603_256x240.png" />
+    <Content Include="App_Themes\swanky-purse\Styles\images\ui-icons_e8e2b5_256x240.png" />
+    <Content Include="App_Themes\swanky-purse\Styles\images\ui-icons_e9cd86_256x240.png" />
+    <Content Include="App_Themes\swanky-purse\Styles\images\ui-icons_efec9f_256x240.png" />
+    <Content Include="App_Themes\swanky-purse\Styles\images\ui-icons_f2ec64_256x240.png" />
+    <Content Include="App_Themes\swanky-purse\Styles\images\ui-icons_f9f2bd_256x240.png" />
+    <Content Include="App_Themes\swanky-purse\Styles\images\ui-icons_ff7519_256x240.png" />
+    <Content Include="App_Themes\swanky-purse\Styles\jquery-ui.theme.min.css" />
+    <Content Include="App_Themes\trontastic\Styles\images\ui-bg_diagonals-small_50_262626_40x40.png" />
+    <Content Include="App_Themes\trontastic\Styles\images\ui-bg_flat_0_303030_40x100.png" />
+    <Content Include="App_Themes\trontastic\Styles\images\ui-bg_flat_0_4c4c4c_40x100.png" />
+    <Content Include="App_Themes\trontastic\Styles\images\ui-bg_glass_40_0a0a0a_1x400.png" />
+    <Content Include="App_Themes\trontastic\Styles\images\ui-bg_glass_55_f1fbe5_1x400.png" />
+    <Content Include="App_Themes\trontastic\Styles\images\ui-bg_glass_60_000000_1x400.png" />
+    <Content Include="App_Themes\trontastic\Styles\images\ui-bg_gloss-wave_55_000000_500x100.png" />
+    <Content Include="App_Themes\trontastic\Styles\images\ui-bg_gloss-wave_85_9fda58_500x100.png" />
+    <Content Include="App_Themes\trontastic\Styles\images\ui-bg_gloss-wave_95_f6ecd5_500x100.png" />
+    <Content Include="App_Themes\trontastic\Styles\images\ui-icons_000000_256x240.png" />
+    <Content Include="App_Themes\trontastic\Styles\images\ui-icons_1f1f1f_256x240.png" />
+    <Content Include="App_Themes\trontastic\Styles\images\ui-icons_9fda58_256x240.png" />
+    <Content Include="App_Themes\trontastic\Styles\images\ui-icons_b8ec79_256x240.png" />
+    <Content Include="App_Themes\trontastic\Styles\images\ui-icons_cd0a0a_256x240.png" />
+    <Content Include="App_Themes\trontastic\Styles\images\ui-icons_ffffff_256x240.png" />
+    <Content Include="App_Themes\trontastic\Styles\jquery-ui.theme.min.css" />
+    <Content Include="App_Themes\ui-darkness\Styles\images\ui-bg_flat_30_cccccc_40x100.png" />
+    <Content Include="App_Themes\ui-darkness\Styles\images\ui-bg_flat_50_5c5c5c_40x100.png" />
+    <Content Include="App_Themes\ui-darkness\Styles\images\ui-bg_glass_20_555555_1x400.png" />
+    <Content Include="App_Themes\ui-darkness\Styles\images\ui-bg_glass_40_0078a3_1x400.png" />
+    <Content Include="App_Themes\ui-darkness\Styles\images\ui-bg_glass_40_ffc73d_1x400.png" />
+    <Content Include="App_Themes\ui-darkness\Styles\images\ui-bg_gloss-wave_25_333333_500x100.png" />
+    <Content Include="App_Themes\ui-darkness\Styles\images\ui-bg_highlight-soft_80_eeeeee_1x100.png" />
+    <Content Include="App_Themes\ui-darkness\Styles\images\ui-bg_inset-soft_25_000000_1x100.png" />
+    <Content Include="App_Themes\ui-darkness\Styles\images\ui-bg_inset-soft_30_f58400_1x100.png" />
+    <Content Include="App_Themes\ui-darkness\Styles\images\ui-icons_222222_256x240.png" />
+    <Content Include="App_Themes\ui-darkness\Styles\images\ui-icons_4b8e0b_256x240.png" />
+    <Content Include="App_Themes\ui-darkness\Styles\images\ui-icons_a83300_256x240.png" />
+    <Content Include="App_Themes\ui-darkness\Styles\images\ui-icons_cccccc_256x240.png" />
+    <Content Include="App_Themes\ui-darkness\Styles\images\ui-icons_ffffff_256x240.png" />
+    <Content Include="App_Themes\ui-darkness\Styles\jquery-ui.theme.min.css" />
+    <Content Include="App_Themes\ui-lightness\Styles\images\ui-bg_diagonals-thick_18_b81900_40x40.png" />
+    <Content Include="App_Themes\ui-lightness\Styles\images\ui-bg_diagonals-thick_20_666666_40x40.png" />
+    <Content Include="App_Themes\ui-lightness\Styles\images\ui-bg_flat_10_000000_40x100.png" />
+    <Content Include="App_Themes\ui-lightness\Styles\images\ui-bg_glass_100_f6f6f6_1x400.png" />
+    <Content Include="App_Themes\ui-lightness\Styles\images\ui-bg_glass_100_fdf5ce_1x400.png" />
+    <Content Include="App_Themes\ui-lightness\Styles\images\ui-bg_glass_65_ffffff_1x400.png" />
+    <Content Include="App_Themes\ui-lightness\Styles\images\ui-bg_gloss-wave_35_f6a828_500x100.png" />
+    <Content Include="App_Themes\ui-lightness\Styles\images\ui-bg_highlight-soft_100_eeeeee_1x100.png" />
+    <Content Include="App_Themes\ui-lightness\Styles\images\ui-bg_highlight-soft_75_ffe45c_1x100.png" />
+    <Content Include="App_Themes\ui-lightness\Styles\images\ui-icons_222222_256x240.png" />
+    <Content Include="App_Themes\ui-lightness\Styles\images\ui-icons_228ef1_256x240.png" />
+    <Content Include="App_Themes\ui-lightness\Styles\images\ui-icons_ef8c08_256x240.png" />
+    <Content Include="App_Themes\ui-lightness\Styles\images\ui-icons_ffd27a_256x240.png" />
+    <Content Include="App_Themes\ui-lightness\Styles\images\ui-icons_ffffff_256x240.png" />
+    <Content Include="App_Themes\ui-lightness\Styles\jquery-ui.theme.min.css" />
+    <Content Include="App_Themes\vader\Styles\images\ui-bg_flat_0_aaaaaa_40x100.png" />
+    <Content Include="App_Themes\vader\Styles\images\ui-bg_glass_95_fef1ec_1x400.png" />
+    <Content Include="App_Themes\vader\Styles\images\ui-bg_gloss-wave_16_121212_500x100.png" />
+    <Content Include="App_Themes\vader\Styles\images\ui-bg_highlight-hard_15_888888_1x100.png" />
+    <Content Include="App_Themes\vader\Styles\images\ui-bg_highlight-hard_55_555555_1x100.png" />
+    <Content Include="App_Themes\vader\Styles\images\ui-bg_highlight-soft_35_adadad_1x100.png" />
+    <Content Include="App_Themes\vader\Styles\images\ui-bg_highlight-soft_60_dddddd_1x100.png" />
+    <Content Include="App_Themes\vader\Styles\images\ui-bg_inset-soft_15_121212_1x100.png" />
+    <Content Include="App_Themes\vader\Styles\images\ui-icons_666666_256x240.png" />
+    <Content Include="App_Themes\vader\Styles\images\ui-icons_aaaaaa_256x240.png" />
+    <Content Include="App_Themes\vader\Styles\images\ui-icons_bbbbbb_256x240.png" />
+    <Content Include="App_Themes\vader\Styles\images\ui-icons_c98000_256x240.png" />
+    <Content Include="App_Themes\vader\Styles\images\ui-icons_cccccc_256x240.png" />
+    <Content Include="App_Themes\vader\Styles\images\ui-icons_cd0a0a_256x240.png" />
+    <Content Include="App_Themes\vader\Styles\images\ui-icons_f29a00_256x240.png" />
+    <Content Include="App_Themes\vader\Styles\jquery-ui.theme.min.css" />
+    <Content Include="contact_us.aspx" />
+    <Content Include="about.aspx" />
+    <Content Include="compose.aspx" />
+    <Content Include="Content\jHtmlArea\jHtmlArea.ColorPickerMenu.css" />
+    <Content Include="Content\jHtmlArea\jHtmlArea.css" />
+    <Content Include="Content\jHtmlArea\jHtmlArea.Editor.css" />
+    <Content Include="Content\jHtmlArea\jHtmlArea.png" />
+    <Content Include="Content\jHtmlArea\jHtmlArea_Toolbar_Group_BG.png" />
+    <Content Include="Content\jHtmlArea\jHtmlArea_Toolbar_Group__Btn_Select_BG.png" />
+    <Content Include="contacts.aspx" />
+    <Content Include="contact.aspx" />
+    <Content Include="help.htm" />
+    <Content Include="Images\at-64056_640.jpg" />
+    <Content Include="Images\note-34686_640.png" />
+    <Content Include="mails.aspx" />
+    <Content Include="logout.aspx" />
+    <None Include="Scripts\jquery-1.4.4-vsdoc.js" />
+    <Content Include="Scripts\contacts.js" />
+    <Content Include="Scripts\jquery-1.4.4.js" />
+    <Content Include="Scripts\jquery-1.4.4.min.js" />
+    <Content Include="Styles\Contact.css" />
+    <Content Include="update_profile.aspx" />
+    <Content Include="privacy.aspx" />
+    <Content Include="login.aspx" />
+    <Content Include="privacy_text.aspx" />
+    <Content Include="register.aspx" />
+    <Content Include="manage.aspx" />
+    <Content Include="Global.asax" />
+    <Content Include="Images\logo.png" />
+    <Content Include="index.aspx" />
+    <Content Include="Scripts\Register.js" />
+    <Content Include="Scripts\mustache.js" />
+    <Content Include="Styles\Page.css" />
+    <Content Include="Styles\jquery-ui.min.css" />
+    <Content Include="Scripts\jquery-ui.min.js" />
+    <Content Include="Styles\jquery-ui.structure.min.css" />
+    <Content Include="Scripts\basic.js" />
+    <Content Include="Scripts\jquery-1.11.1.min.js" />
+    <Content Include="Styles\Inbox.css" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_Code\Controller\UIPersController.cs" />
+    <Content Include="App_Code\Controller\ThreadsController.cs" />
+    <Content Include="App_Code\Controller\OAuthController.cs" />
+    <Content Include="App_Code\Controller\ContactTagsController.cs" />
+    <Compile Include="App_GlobalResources\ar-SA\Global.ar-SA.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Global.ar-SA.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\ar-SA\Icons.ar-SA.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Icons.ar-SA.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\cs-CZ\Global.cs-CZ.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Global.cs-CZ.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\cs-CZ\Icons.cs-CZ.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Icons.cs-CZ.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\da-DK\Global.da-DK.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Global.da-DK.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\da-DK\Icons.da-DK.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Icons.da-DK.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\de-DE\Global.de-DE.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Global.de-DE.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\de-DE\Icons.de-DE.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Icons.de-DE.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\es-ES\Global.es-ES.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Global.es-ES.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\es-ES\Icons.es-ES.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Icons.es-ES.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\fr-FR\Global.fr-FR.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Global.fr-FR.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\fr-FR\Icons.fr-FR.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Icons.fr-FR.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\he-IL\Global.he-IL.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Global.he-IL.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\he-IL\Icons.he-IL.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Icons.he-IL.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\hi-IN\Global.hi-IN.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Global.hi-IN.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\hi-IN\Icons.hi-IN.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Icons.hi-IN.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\it-IT\Global.it-IT.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Global.it-IT.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\it-IT\Icons.it-IT.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Icons.it-IT.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\nb-NO\Global.nb-NO.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Global.nb-NO.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\nb-NO\Icons.nb-NO.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Icons.nb-NO.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\nl-NL\Global.nl-NL.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Global.nl-NL.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\nl-NL\Icons.nl-NL.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Icons.nl-NL.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\pl-PL\Global.pl-PL.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Global.pl-PL.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\pl-PL\Icons.pl-PL.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Icons.pl-PL.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\pt-PT\Global.pt-PT.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Global.pt-PT.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\pt-PT\Icons.pt-PT.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Icons.pt-PT.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\ru-RU\Global.ru-RU.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Global.ru-RU.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\ru-RU\Icons.ru-RU.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Icons.ru-RU.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\sv-SE\Global.sv-SE.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Global.sv-SE.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\sv-SE\Icons.sv-SE.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Icons.sv-SE.resx</DependentUpon>
+    </Compile>
+    <Compile Include="contact_us.aspx.cs">
+      <DependentUpon>contact_us.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="contact_us.aspx.designer.cs">
+      <DependentUpon>contact_us.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="about.aspx.cs">
+      <DependentUpon>about.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="about.aspx.designer.cs">
+      <DependentUpon>about.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="compose.aspx.cs">
+      <DependentUpon>compose.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="compose.aspx.designer.cs">
+      <DependentUpon>compose.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="contacts.aspx.cs">
+      <DependentUpon>contacts.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="contacts.aspx.designer.cs">
+      <DependentUpon>contacts.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="contact.aspx.cs">
+      <DependentUpon>contact.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="contact.aspx.designer.cs">
+      <DependentUpon>contact.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="help.aspx.cs">
+      <DependentUpon>help.htm</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="help.aspx.designer.cs">
+      <DependentUpon>help.htm</DependentUpon>
+    </Compile>
+    <Compile Include="mails.aspx.cs">
+      <DependentUpon>mails.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="mails.aspx.designer.cs">
+      <DependentUpon>mails.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="logout.aspx.cs">
+      <DependentUpon>logout.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="logout.aspx.designer.cs">
+      <DependentUpon>logout.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="update_profile.aspx.cs">
+      <DependentUpon>update_profile.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="update_profile.aspx.designer.cs">
+      <DependentUpon>update_profile.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="privacy.aspx.cs">
+      <DependentUpon>privacy.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="privacy.aspx.designer.cs">
+      <DependentUpon>privacy.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="login.aspx.cs">
+      <DependentUpon>login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="login.aspx.designer.cs">
+      <DependentUpon>login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="privacy_text.aspx.cs">
+      <DependentUpon>privacy_text.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="privacy_text.aspx.designer.cs">
+      <DependentUpon>privacy_text.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="register.aspx.cs">
+      <DependentUpon>register.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="register.aspx.designer.cs">
+      <DependentUpon>register.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="manage.aspx.cs">
+      <DependentUpon>manage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="manage.aspx.designer.cs">
+      <DependentUpon>manage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ThemedPage.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Content Include="App_Code\Controller\TagsController.cs" />
+    <Compile Include="App_Code\Controller\UIConfig.cs" />
+    <Compile Include="App_Code\StatefulControllerHandler.cs" />
+    <Compile Include="App_GlobalResources\en-US\Global.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Global.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\en-US\Icons.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Icons.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="index.aspx.cs">
+      <DependentUpon>index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="index.aspx.designer.cs">
+      <DependentUpon>index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="packages.config" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Fonts\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_LocalResources\en-US\index.aspx.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_GlobalResources\en-US\Global.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>Global.designer.cs</LastGenOutput>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_GlobalResources\en-US\Icons.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>Icons.Designer.cs</LastGenOutput>
+    </Content>
+    <Content Include="App_LocalResources\en-US\register.aspx.resx" />
+    <Content Include="App_LocalResources\en-US\privacy_text.aspx.resx" />
+    <Content Include="App_LocalResources\en-US\update_profile.aspx.resx" />
+    <Content Include="App_LocalResources\en-US\manage.aspx.resx" />
+    <Content Include="App_LocalResources\en-US\login.aspx.resx" />
+    <Content Include="App_LocalResources\en-US\privacy.aspx.resx" />
+    <Content Include="App_LocalResources\en-US\contact_us.aspx.resx" />
+    <Content Include="App_LocalResources\en-US\compose.aspx.resx" />
+    <Content Include="App_LocalResources\en-US\mails.aspx.resx" />
+    <Content Include="App_LocalResources\en-US\contacts.aspx.resx" />
+    <Content Include="App_LocalResources\en-US\contact.aspx.resx" />
+    <Content Include="App_LocalResources\en-US\about.aspx.resx" />
+    <Content Include="App_GlobalResources\ar-SA\Global.ar-SA.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>Global.ar-SA.designer.cs</LastGenOutput>
+    </Content>
+    <Content Include="App_GlobalResources\ar-SA\Icons.ar-SA.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>Icons.ar-SA.designer.cs</LastGenOutput>
+    </Content>
+    <Content Include="App_GlobalResources\cs-CZ\Global.cs-CZ.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>Global.cs-CZ.designer.cs</LastGenOutput>
+    </Content>
+    <Content Include="App_GlobalResources\cs-CZ\Icons.cs-CZ.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>Icons.cs-CZ.designer.cs</LastGenOutput>
+    </Content>
+    <Content Include="App_GlobalResources\da-DK\Global.da-DK.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>Global.da-DK.designer.cs</LastGenOutput>
+    </Content>
+    <Content Include="App_GlobalResources\da-DK\Icons.da-DK.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>Icons.da-DK.designer.cs</LastGenOutput>
+    </Content>
+    <Content Include="App_GlobalResources\de-DE\Global.de-DE.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>Global.de-DE.designer.cs</LastGenOutput>
+    </Content>
+    <Content Include="App_GlobalResources\de-DE\Icons.de-DE.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>Icons.de-DE.designer.cs</LastGenOutput>
+    </Content>
+    <Content Include="App_GlobalResources\es-ES\Global.es-ES.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>Global.es-ES.designer.cs</LastGenOutput>
+    </Content>
+    <Content Include="App_GlobalResources\es-ES\Icons.es-ES.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>Icons.es-ES.designer.cs</LastGenOutput>
+    </Content>
+    <Content Include="App_GlobalResources\fr-FR\Global.fr-FR.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>Global.fr-FR.designer.cs</LastGenOutput>
+    </Content>
+    <Content Include="App_GlobalResources\fr-FR\Icons.fr-FR.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>Icons.fr-FR.designer.cs</LastGenOutput>
+    </Content>
+    <Content Include="App_GlobalResources\he-IL\Global.he-IL.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>Global.he-IL.designer.cs</LastGenOutput>
+    </Content>
+    <Content Include="App_GlobalResources\he-IL\Icons.he-IL.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>Icons.he-IL.designer.cs</LastGenOutput>
+    </Content>
+    <Content Include="App_GlobalResources\hi-IN\Global.hi-IN.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>Global.hi-IN.designer.cs</LastGenOutput>
+    </Content>
+    <Content Include="App_GlobalResources\hi-IN\Icons.hi-IN.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>Icons.hi-IN.designer.cs</LastGenOutput>
+    </Content>
+    <Content Include="App_GlobalResources\it-IT\Global.it-IT.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>Global.it-IT.designer.cs</LastGenOutput>
+    </Content>
+    <Content Include="App_GlobalResources\it-IT\Icons.it-IT.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>Icons.it-IT.designer.cs</LastGenOutput>
+    </Content>
+    <Content Include="App_GlobalResources\nb-NO\Global.nb-NO.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>Global.nb-NO.designer.cs</LastGenOutput>
+    </Content>
+    <Content Include="App_GlobalResources\nb-NO\Icons.nb-NO.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>Icons.nb-NO.designer.cs</LastGenOutput>
+    </Content>
+    <Content Include="App_GlobalResources\nl-NL\Global.nl-NL.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>Global.nl-NL.designer.cs</LastGenOutput>
+    </Content>
+    <Content Include="App_GlobalResources\nl-NL\Icons.nl-NL.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>Icons.nl-NL.designer.cs</LastGenOutput>
+    </Content>
+    <Content Include="App_GlobalResources\pl-PL\Global.pl-PL.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>Global.pl-PL.designer.cs</LastGenOutput>
+    </Content>
+    <Content Include="App_GlobalResources\pl-PL\Icons.pl-PL.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>Icons.pl-PL.designer.cs</LastGenOutput>
+    </Content>
+    <Content Include="App_GlobalResources\pt-PT\Global.pt-PT.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>Global.pt-PT.designer.cs</LastGenOutput>
+    </Content>
+    <Content Include="App_GlobalResources\pt-PT\Icons.pt-PT.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>Icons.pt-PT.designer.cs</LastGenOutput>
+    </Content>
+    <Content Include="App_GlobalResources\ru-RU\Global.ru-RU.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>Global.ru-RU.designer.cs</LastGenOutput>
+    </Content>
+    <Content Include="App_GlobalResources\ru-RU\Icons.ru-RU.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>Icons.ru-RU.designer.cs</LastGenOutput>
+    </Content>
+    <Content Include="App_GlobalResources\sv-SE\Global.sv-SE.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>Global.sv-SE.designer.cs</LastGenOutput>
+    </Content>
+    <Content Include="App_GlobalResources\sv-SE\Icons.sv-SE.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>Icons.sv-SE.designer.cs</LastGenOutput>
+    </Content>
+    <Content Include="App_LocalResources\ar-SA\about.aspx.ar-SA.resx" />
+    <Content Include="App_LocalResources\ar-SA\compose.aspx.ar-SA.resx" />
+    <Content Include="App_LocalResources\ar-SA\contact.aspx.ar-SA.resx" />
+    <Content Include="App_LocalResources\ar-SA\contacts.aspx.ar-SA.resx" />
+    <Content Include="App_LocalResources\ar-SA\contact_us.aspx.ar-SA.resx" />
+    <Content Include="App_LocalResources\ar-SA\index.aspx.ar-SA.resx" />
+    <Content Include="App_LocalResources\ar-SA\login.aspx.ar-SA.resx" />
+    <Content Include="App_LocalResources\ar-SA\mails.aspx.ar-SA.resx" />
+    <Content Include="App_LocalResources\ar-SA\manage.aspx.ar-SA.resx" />
+    <Content Include="App_LocalResources\ar-SA\privacy.aspx.ar-SA.resx" />
+    <Content Include="App_LocalResources\ar-SA\privacy_text.aspx.ar-SA.resx" />
+    <Content Include="App_LocalResources\ar-SA\register.aspx.ar-SA.resx" />
+    <Content Include="App_LocalResources\ar-SA\update_profile.aspx.ar-SA.resx" />
+    <Content Include="App_LocalResources\cs-CZ\about.aspx.cs-CZ.resx" />
+    <Content Include="App_LocalResources\cs-CZ\compose.aspx.cs-CZ.resx" />
+    <Content Include="App_LocalResources\cs-CZ\contact.aspx.cs-CZ.resx" />
+    <Content Include="App_LocalResources\cs-CZ\contacts.aspx.cs-CZ.resx" />
+    <Content Include="App_LocalResources\cs-CZ\contact_us.aspx.cs-CZ.resx" />
+    <Content Include="App_LocalResources\cs-CZ\index.aspx.cs-CZ.resx" />
+    <Content Include="App_LocalResources\cs-CZ\login.aspx.cs-CZ.resx" />
+    <Content Include="App_LocalResources\cs-CZ\mails.aspx.cs-CZ.resx" />
+    <Content Include="App_LocalResources\cs-CZ\manage.aspx.cs-CZ.resx" />
+    <Content Include="App_LocalResources\cs-CZ\privacy.aspx.cs-CZ.resx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DomainLayer\DomainLayer.csproj">
+      <Project>{f7d65f22-c0f1-4ab8-8418-8709aafdd1a3}</Project>
+      <Name>DomainLayer</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>49991</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:51146/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,8 @@
+C:\Users\Nibras\documents\visual studio 2012\Projects\TheMailClient\StorageLayerTests\bin\Release\PersistenceTests.dll
+C:\Users\Nibras\documents\visual studio 2012\Projects\TheMailClient\StorageLayerTests\bin\Release\PersistenceTests.pdb
+C:\Users\Nibras\documents\visual studio 2012\Projects\TheMailClient\StorageLayerTests\bin\Release\Storage.dll
+C:\Users\Nibras\documents\visual studio 2012\Projects\TheMailClient\StorageLayerTests\bin\Release\Newtonsoft.Json.dll
+C:\Users\Nibras\documents\visual studio 2012\Projects\TheMailClient\StorageLayerTests\bin\Release\Storage.pdb
+C:\Users\Nibras\documents\visual studio 2012\Projects\TheMailClient\StorageLayerTests\obj\Release\StorageLayerTests.csprojResolveAssemblyReference.cache
+C:\Users\Nibras\documents\visual studio 2012\Projects\TheMailClient\StorageLayerTests\obj\Release\PersistenceTests.dll
+C:\Users\Nibras\documents\visual studio 2012\Projects\TheMailClient\StorageLayerTests\obj\Release\PersistenceTests.pdb

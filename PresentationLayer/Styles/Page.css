@@ -1,0 +1,209 @@
+﻿/*****************************************************************************
+    This file contains CSS stylings to control layout and flow of the pages.
+
+    Author: Nibras Ahamed Reeza (CB004641)
+    E-Mail: nibras.ahamed@gmail.com
+
+    Last Modified: 18/08/2014
+
+******************************************************************************/
+/*http://www.feedthebot.com/pagespeed/optimize-css-delivery.html
+
+    */
+
+/*
+https://stackoverflow.com/questions/7990832/float-css-attribute-causing-parent-div-not-to-inherit-height
+*/
+
+#lang_selector {
+    float: right;
+    margin-top: 25%;
+}
+
+div {
+    margin: auto;
+    /*border: solid 1px black;*/
+}
+/*https://stackoverflow.com/questions/2372859/why-jquerys-ui-css-filess-font-sizes-are-bigger-than-normal*/
+body {
+    font-size: 14px;
+    margin: 4px !important;
+    max-width: 1920px !important;
+}
+
+#main_wrapper, body, #form1 {
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    border: none !important;
+}
+
+#header {
+    padding: 3px;
+    min-height: 64px;
+    max-height: 134px;
+    height: 100px;
+}
+
+#body {
+    margin-top: 0.5%;
+}
+
+#footer {
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+    height: 38px;
+}
+
+#content {
+    float: left;
+    width: 87%;
+    height: 99%;
+}
+
+#promo {
+    float: right;
+    width: 12%;
+    height: 99%;
+    background-color: gray;
+}
+
+ul.navigation {
+    margin: 0px;
+    text-align: center;
+    margin-bottom: 1%;
+}
+/*http://css.maxdesign.com.au/listamatic/horizontal01.htm*/
+ul.horizontal li {
+    display: inline;
+    list-style: none;
+}
+
+.navigation a {
+    margin-right: 3%;
+    margin-left: 3%;
+    text-decoration: none;
+}
+
+#logo, #search, #account {
+    height: 97%;
+}
+
+#logo {
+    float: left;
+    width: 12%;
+    text-align: center;
+}
+
+#account {
+    float: right;
+    width: 18%;
+}
+
+#account_links {
+    text-align: right;
+}
+
+#search {
+    float: left;
+    margin-left: 6%;
+    width: 60%;
+    vertical-align: central;
+    text-align: center;
+}
+
+#search_term {
+    margin: 1%;
+    margin-right: 0px;
+    padding: 1%;
+    width: 70%;
+}
+
+#searchButton {
+    margin: 1%;
+    margin-left: 0px;
+    padding: 1%;
+    width: 2%;
+}
+
+#logo_image {
+    height: 98%;
+}
+
+div.tag span.ui-icon {
+    float: right;
+    margin: auto;
+    max-height: 99%;
+}
+
+.navigation a:hover {
+    text-decoration: underline;
+}
+
+header {
+    margin: 1%;
+}
+
+.form {
+    display: table;
+    float: left;
+    width: 30%;
+    margin-left: 2%;
+}
+
+    .form input {
+        padding: 1%;
+        margin: 1%;
+        width: 95%;
+    }
+
+.left_column {
+    float: left;
+    padding: 2%;
+    display: table-cell;
+    width: 30%;
+}
+
+.right_column {
+    float: right;
+    padding: 1%;
+    display: table-cell;
+    width: 60%;
+}
+
+.row {
+    display: table-row;
+    padding: 1%;
+    margin: 1%;
+}
+
+#privacy {
+    margin: 1%;
+    float: right;
+    width: 60%;
+    margin-right: 2%;
+}
+
+    #privacy header {
+        font-weight: bolder;
+    }
+
+#btnSubmit {
+    margin: 1%;
+    float: right;
+    width: 25%;
+    padding: 1%;
+}
+
+#btnReset {
+    margin: 1%;
+    width: 25%;
+    float: right;
+    padding: 1%;
+}
+
+#chkTerms {
+    float: left;
+    width: auto;
+}

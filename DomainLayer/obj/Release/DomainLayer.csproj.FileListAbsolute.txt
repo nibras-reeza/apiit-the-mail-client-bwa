@@ -1,0 +1,11 @@
+C:\Users\Nibras\documents\visual studio 2012\Projects\TheMailClient\DomainLayer\bin\Release\Domain.dll
+C:\Users\Nibras\documents\visual studio 2012\Projects\TheMailClient\DomainLayer\bin\Release\Domain.pdb
+C:\Users\Nibras\documents\visual studio 2012\Projects\TheMailClient\DomainLayer\bin\Release\Storage.dll
+C:\Users\Nibras\documents\visual studio 2012\Projects\TheMailClient\DomainLayer\bin\Release\Newtonsoft.Json.dll
+C:\Users\Nibras\documents\visual studio 2012\Projects\TheMailClient\DomainLayer\bin\Release\Storage.pdb
+C:\Users\Nibras\documents\visual studio 2012\Projects\TheMailClient\DomainLayer\obj\Release\DomainLayer.csprojResolveAssemblyReference.cache
+C:\Users\Nibras\documents\visual studio 2012\Projects\TheMailClient\DomainLayer\obj\Release\Domain.dll
+C:\Users\Nibras\documents\visual studio 2012\Projects\TheMailClient\DomainLayer\obj\Release\Domain.pdb
+C:\Users\Nibras\Documents\Visual Studio 2012\Projects\TheMailClient\DomainLayer\bin\Release\Renci.SshNet.dll
+C:\Users\Nibras\Documents\Visual Studio 2012\Projects\TheMailClient\DomainLayer\bin\Release\App_Data\TMCDB.mdf
+C:\Users\Nibras\Documents\Visual Studio 2012\Projects\TheMailClient\DomainLayer\bin\Release\App_Data\TMCDB_log.ldf
